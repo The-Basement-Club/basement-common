@@ -1,7 +1,7 @@
 {
-    "name": "austinkregel/basement-common",
+    "name": "kregel/basement-common",
     "type": "library",
-    "description": "",
+    "description": "This package is just some interfaces used by thebasement.club. Anyone is welcome to build services that conform to the interfaces and suggest them to be included in the main site by creating an issue.\n\n",
     "keywords": [
         "thebasement.club"
     ],
