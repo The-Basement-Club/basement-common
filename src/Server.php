@@ -2,7 +2,9 @@
 
 namespace Kregel\Basement;
 
-abstract class Server
-{
+use ArrayAccess;
+use Illuminate\Support\Fluent;
 
+abstract class Server extends Fluent
+{
 }

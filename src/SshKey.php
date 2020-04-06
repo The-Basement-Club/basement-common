@@ -2,6 +2,8 @@
 
 namespace Kregel\Basement;
 
-abstract class SshKey
+use Illuminate\Support\Fluent;
+
+abstract class SshKey extends Fluent
 {
 }

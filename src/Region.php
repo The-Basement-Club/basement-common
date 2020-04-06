@@ -2,8 +2,8 @@
 
 namespace Kregel\Basement;
 
-abstract class Region
+use Illuminate\Support\Fluent;
+
+abstract class Region extends Fluent
 {
-    public $id;
-    public $name;
 }
