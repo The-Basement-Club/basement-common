@@ -6,6 +6,7 @@ interface ServerServiceContract
 {
     public function createServer(array $config): Server;
     public function createServerKey(array $config): SshKey;
+    public function removeServerKey($identifier): void;
 
     public function deleteServer(int $identifier): void;
 
@@ -31,5 +32,9 @@ interface ServerServiceContract
      * @return Server[]
      */
     public function findAllServers(): array;
-    public function removeServerKey($identifier): void;
+
+    /**
+     * @return SshKey[]
+     */
+    public function findAllSshkeys(): array;
 }
