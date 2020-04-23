@@ -2,8 +2,6 @@
 
 namespace Kregel\Basement;
 
-use Illuminate\Support\Fluent;
-
-abstract class Region extends Fluent
+interface Region
 {
 }
