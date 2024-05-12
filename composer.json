@@ -1,36 +1,40 @@
 {
-    "name": "kregel/basement-common",
+    "name": "the-basement/common",
     "type": "library",
     "description": "This package is just some interfaces used by thebasement.club. Anyone is welcome to build services that conform to the interfaces and suggest them to be included in the main site by creating an issue.\n\n",
     "keywords": [
         "thebasement.club"
     ],
-    "homepage": "https://github.com/austinkregel/basement-common",
+    "homepage": "https://github.com/The-Basement-Club/basement-common",
     "license": "MIT",
     "authors": [
         {
             "name": "Austin Kregel",
-            "email": "austin@kregel.co",
+            "email": "5355937+austinkregel@users.noreply.github.com",
             "homepage": "https://austinkregel.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": ">=7.2",
-        "illuminate/database": ">=7.4",
-        "illuminate/support": ">=7.4"
+        "php": ">=8.2",
+        "illuminate/database": ">=10.10",
+        "illuminate/support": ">=10.10"
     },
     "autoload": {
         "psr-4": {
-            "Kregel\\Basement\\": "src"
+            "TheBasement\\Common\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Kregel\\Basement\\Tests\\": "tests"
+            "TheBasement\\Common\\Tests\\": "tests"
         }
     },
     "config": {
         "sort-packages": true
+    },
+    "require-dev": {
+        "laravel/pint": "^1.15",
+        "phpunit/phpunit": "^11.1"
     }
 }

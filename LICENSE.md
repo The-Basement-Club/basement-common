@@ -1,6 +1,6 @@
 # The MIT License (MIT)
 
-Copyright (c) 2020 Austin Kregel <austin@kregel.co>
+Copyright (c) 2024 Austin Kregel <5355937+austinkregel@users.noreply.github.com>
 
 > Permission is hereby granted, free of charge, to any person obtaining a copy
 > of this software and associated documentation files (the "Software"), to deal
