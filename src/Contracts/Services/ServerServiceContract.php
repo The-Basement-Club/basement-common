@@ -4,6 +4,7 @@ namespace TheBasement\Common\Contracts\Services;
 
 use TheBasement\Common\Contracts\Models\Serverlike;
 use TheBasement\Common\Contracts\Models\SshKeylike;
+use TheBasement\Common\Exceptions\NotImplementedException;
 
 interface ServerServiceContract
 {

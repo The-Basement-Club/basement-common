@@ -6,7 +6,7 @@ namespace TheBasement\Common\Services;
 
 use Closure;
 use TheBasement\Common\Contracts\Services\DomainServiceContract;
-use TheBasement\Common\NotImplementedException;
+use TheBasement\Common\Exceptions\NotImplementedException;
 
 /**
  * <code>
@@ -24,7 +24,7 @@ use TheBasement\Common\NotImplementedException;
  *
  * @throws NotImplementedException
  */
-class ServerServiceFactoryService
+class DomainServiceFactory
 {
     public function __construct(
         protected array $services = [],
@@ -33,9 +33,12 @@ class ServerServiceFactoryService
 
     public function make(string $service): DomainServiceContract
     {
-        $registeredService = $this->services[$service] ?? throw new NotImplementedException(
-            sprintf('Service %s is not implemented.', $service)
-        );
+
+        $registeredServices = $this->services[$service] ?? throw new NotImplementedException("Service $service is not implemented.");
+
+        // I'd like to consider, there are multiple packagages running for the same service
+        // so one may not support a function, but another might.
+        $registeredService = $registeredServices[0] ?? null;
 
         if (function_exists('app') && is_string($registeredService)) {
             return app($registeredService);
@@ -55,6 +58,9 @@ class ServerServiceFactoryService
 
     public function register(string $name, string|Closure $service): void
     {
-        $this->services[$name] = $service;
+        if (!isset($this->services[$name])) {
+            $this->services[$name] = [];
+        }
+        $this->services[$name][] = $service;
     }
 }

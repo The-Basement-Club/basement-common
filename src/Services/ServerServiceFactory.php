@@ -6,7 +6,7 @@ namespace TheBasement\Common\Services;
 
 use Closure;
 use TheBasement\Common\Contracts\Services\ServerServiceContract;
-use TheBasement\Common\NotImplementedException;
+use TheBasement\Common\Exceptions\NotImplementedException;
 
 /**
  * <code>

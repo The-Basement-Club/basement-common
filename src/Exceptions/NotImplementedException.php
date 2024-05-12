@@ -1,6 +1,6 @@
 <?php
 
-namespace TheBasement\Common;
+namespace TheBasement\Common\Exceptions;
 
 use DomainException;
 
