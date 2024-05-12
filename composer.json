@@ -16,7 +16,6 @@
         }
     ],
     "require": {
-        "ext-libvirt": "*",
         "php": ">=8.2",
         "illuminate/database": ">=10.10",
         "illuminate/support": ">=10.10"
