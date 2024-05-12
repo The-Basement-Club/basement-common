@@ -11,7 +11,7 @@ This package is just some interfaces used by [thebasement.club](https://thebasem
 Via Composer
 
 ``` bash
-$ composer require kregel/basement-common
+$ composer require thebasement/common
 ```
 
 ## Change log
@@ -34,19 +34,19 @@ If you discover any security related issues, please email security@austinkregel.
 
 ## Credits
 
-- [Austin Kregel][link-author]
+- [Austin Kregel][https://austinkregel.com]
 - [All Contributors][link-contributors]
 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/kregel/basement-common.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/thebasement/common.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/kregel/basement-common.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/kregel/basement-common.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/thebasement/common.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/thebasement/common.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/kregel/basement-common
-[link-downloads]: https://packagist.org/packages/kregel/basement-common
+[link-packagist]: https://packagist.org/packages/thebasement/common
+[link-downloads]: https://packagist.org/packages/thebasement/common
 [link-author]: https://github.com/austinkregel
 [link-contributors]: ../../contributors
